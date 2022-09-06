@@ -29,8 +29,35 @@ nav {
     grid-row: 1 / 3;
 }
 
+.nav.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+img.logo {
+    width:20%;
+    margin: 10px;
+    filter: invert(81%) sepia(3%) saturate(2110%) hue-rotate(194deg) brightness(120%) contrast(102%);
+}
+
 div.nav > ul {
     list-style-type: none;
+    padding: 0;
+}
+
+li > a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+
+}
+
+a > img {
+    width: 10%;
+    margin: 10px 20px;
 }
 
 main {

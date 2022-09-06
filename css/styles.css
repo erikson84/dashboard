@@ -20,7 +20,7 @@ header {
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
-    padding: 20px 30px;
+    padding: 20px 30px 0px 30px;
     box-shadow: 0px 3px 3px lightgrey;
 }
 
@@ -84,6 +84,22 @@ input[type=search] {
 .greeting > img {
     width: 70px;
     margin: 10px 10px 10px 20px;
+}
+
+.head-buttons form {
+    display: flex;
+    justify-content:  space-around;
+    gap: 20px;
+}
+
+.head-buttons form > button {
+    flex: 1;
+    background-color: #0ea5e9;
+    color: #f0f9ff;
+    font-weight: bold;
+    border: 0;
+    border-radius: 15px;
+    height: 30px;
 }
 
 nav {

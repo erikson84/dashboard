@@ -21,7 +21,7 @@ header {
     grid-template-columns: 60% 40%;
     align-items: center;
     padding: 20px 30px;
-    box-shadow: 0px 3px 3px grey;
+    box-shadow: 0px 3px 3px lightgrey;
 }
 
 .searchbar > form {
@@ -31,8 +31,15 @@ header {
 }
 
 form > img {
-    width: 5%; 
     margin-right: 10px;
+}
+
+input[type=search] {
+    flex: 1;
+    background-color: #e2e8f0;
+    border-radius: 50px;
+    border: 0;
+    height: 30px;
 }
 
 .user-card {
@@ -51,8 +58,32 @@ form > img {
     padding: 0;
 }
 
+.greeting {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    font-weight: bold;
+    margin: 0;
+}
+
+.greeting.first-line {
+    font-size: small;
+}
+
+.greeting.user-name {
+    font-size: x-large;
+}
+
+.greeting.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .greeting > img {
-    width: 15%;
+    width: 70px;
+    margin: 10px 10px 10px 20px;
 }
 
 nav {
@@ -61,6 +92,7 @@ nav {
     background-color: #0ea5e9;
     color: #f0f9ff;
     grid-row: 1 / 3;
+    box-shadow: 2px 0px 5px lightgrey;
 }
 
 .nav.title {
@@ -90,7 +122,7 @@ li > a {
 }
 
 img.icon {
-    width: 20px;
+    width: 30px;
     margin: 10px 20px;
 }
 

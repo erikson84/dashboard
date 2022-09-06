@@ -10,29 +10,186 @@
 <body>
     <nav>
         <div class="nav title">
-            <img src="" alt="Dashboard logo">
+            <img src="./img/dash-logo.svg" alt="Dashboard logo" class="logo">
             <h2 class="nav title">Dashboard</h2>
         </div>
         <div class="nav main">
             <ul>
-                <li><a href="#"><img src="" alt="Home icon">Home</a></li>
-                <li><a href="#"><img src="" alt="Profile icon">Profile</a></li>
-                <li><a href="#"><img src="" alt="Messages icon">Messages</a></li>
-                <li><a href="#"><img src="" alt="History icon">History</a></li>
-                <li><a href="#"><img src="" alt="Tasks icon">Tasks</a></li>
-                <li><a href="#"><img src="" alt="Communities icon">Communities</a></li>
+                <li><a href="#"><img src="./img/home.png" alt="Home icon" class="icon"><p>Home</p></a></li>
+                <li><a href="#"><img src="./img/account.png" alt="Profile icon" class="icon"><p>Profile</p></a></li>
+                <li><a href="#"><img src="./img/forum.png" alt="Messages icon" class="icon"><p>Messages</p></a></li>
+                <li><a href="#"><img src="./img/hist.png" alt="History icon" class="icon"><p>History</p></a></li>
+                <li><a href="#"><img src="./img/task.png" alt="Tasks icon" class="icon"><p>Tasks</p></a></li>
+                <li><a href="#"><img src="./img/group.png" alt="Communities icon" class="icon"><p>Communities</p></a></li>
             </ul>
-        </div>
-        <div class="nav brand">
             <ul>
-                <li><a href="#"><img src="" alt="Settings icon">Settings</a></li>
-                <li><a href="#"><img src="" alt="Support icon">Support</a></li>
-                <li><a href="#"><img src="" alt="Privacy icon">Privacy</a></li>
+                <li><a href="#"><img src="./img/cog.png" alt="Settings icon" class="icon"><p>Settings</p></a></li>
+                <li><a href="#"><img src="./img/support.png" alt="Support icon" class="icon"><p>Support</p></a></li>
+                <li><a href="#"><img src="./img/eye.png" alt="Privacy icon" class="icon"><p>Privacy</p></a></li>
             </ul>
         </div>
     </nav>
     <header>
-
+        <div class="searchbar">
+            <form action="url" method="get">
+                <img src="./img/magnify.png" alt="Find icon" class="icon">
+                <input type="search" name="searchField" id="searchField">
+            </form>
+        </div>
+        <div class="user-card">
+            <img src="./img/bell-ring.png" alt="Notification Bell" class="icon">
+            <img src="./img/cat.png" alt="User avatar">
+            <h3 class="user-name">Morgan Oakley</h3>
+        </div>
+        <div class="greeting">
+            <img src="./img/cat.png" alt="User avatar big">
+            <p class="greeting first-line">Hi there,</p>
+            <p class="greeting user-name">Morgan Oakley (@morgan)</p>
+        </div>
+        <div class="head-buttons">
+            <form action="url" method="get">
+                <button class="head">New</button>
+                <button class="head">Upload</button>
+                <button class="head">Share</button>
+            </form>
+        </div>
     </header>
+    <main>
+        <div class="projects">
+            <h3 class="main-title">Your Projects</h3>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-text">
+                        <p class="card-title">Super Cool Project</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec hendrerit ullamcorper risus, ac ultrices purus. Sed at est luctus, mollis.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="" alt="Favorite Star">
+                        <img src="" alt="Toggle visibility Eye">
+                        <img src="" alt="Share Fork">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <p class="card-title">Less Cool Project</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nunc mi libero, consectetur eu urna eu, mollis ullamcorper erat. Nullam id.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="" alt="Favorite Star">
+                        <img src="" alt="Toggle visibility Eye">
+                        <img src="" alt="Share Fork">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <p class="card-title">Impossible App</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lorem purus.
+                            Donec facilisis porta lacus a viverra. Maecenas in.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="" alt="Favorite Star">
+                        <img src="" alt="Toggle visibility Eye">
+                        <img src="" alt="Share Fork">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <p class="card-title">Easy Peasy App</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec hendrerit ullamcorper risus, ac ultrices purus. Sed at est luctus, mollis.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="" alt="Favorite Star">
+                        <img src="" alt="Toggle visibility Eye">
+                        <img src="" alt="Share Fork">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <p class="card-title">Ad Blocker</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="" alt="Favorite Star">
+                        <img src="" alt="Toggle visibility Eye">
+                        <img src="" alt="Share Fork">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <p class="card-title">Money Maker</p>
+                        <p>
+                            Donec hendrerit ullamcorper risus, ac ultrices purus. Sed at est luctus, mollis.
+                        </p>
+                    </div>
+                    <div class="card-buttons">
+                        <img src="" alt="Favorite Star">
+                        <img src="" alt="Toggle visibility Eye">
+                        <img src="" alt="Share Fork">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="annoucements">
+            <h3 class="main-title">Annoucements</h3>
+            <div class="an-container">
+                <div class="ann">
+                    <p class="ann-title">Site Maintenence</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim ante nec lobortis vestibulum...
+                    </p>
+                </div>
+                <div class="ann">
+                    <p class="ann-title">Community Share Day</p>
+                    <p>
+                        Nunc est erat, lacinia vitae purus a, rhoncus accumsan magna. Nam iaculis tristique diam...
+                    </p>
+                </div>
+                <div class="ann">
+                    <p class="ann-title">Update Privacy Policy</p>
+                    <p>
+                        Un vehicula maximus interdum. Mauris lacinia ipsum eu sapien vestibulum, non elementum justo scelerisque...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="trending">
+            <h3 class="main-title">Trending</h3>
+            <div class="trend-container">
+                <div class="user-card-trend">
+                    <img src="" alt="User avatar">
+                    <p class="user-handle">@tegan</p>
+                    <p class="user-desc">World Peace Builder</p>
+                </div>
+                <div class="user-card-trend">
+                    <img src="" alt="User avatar">
+                    <p class="user-handle">@morgan</p>
+                    <p class="user-desc">Super Cool Project</p>
+                </div>
+                <div class="user-card-trend">
+                    <img src="" alt="User avatar">
+                    <p class="user-handle">@kendall</p>
+                    <p class="user-desc">Life Changing App</p>
+                </div>
+                <div class="user-card-trend">
+                    <img src="" alt="User avatar">
+                    <p class="user-handle">@alex</p>
+                    <p class="user-desc">No Traffic Maker</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

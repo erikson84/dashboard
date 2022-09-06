@@ -1,0 +1,119 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0 7% 0 7%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f9ff;
+}
+
+header {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0px 3px 3px grey;
+}
+
+.searchbar > form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form > img {
+    width: 5%; 
+    margin-right: 10px;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-card > img {
+    width: 40px;
+    margin: 0px 20px 0px 10px;
+}
+
+.user-card > h3 {
+    margin: 0 30px 0 0;
+    padding: 0;
+}
+
+.greeting > img {
+    width: 15%;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #0ea5e9;
+    color: #f0f9ff;
+    grid-row: 1 / 3;
+}
+
+.nav.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+img.logo {
+    width:20%;
+    margin: 10px;
+    filter: invert(81%) sepia(3%) saturate(2110%) hue-rotate(194deg) brightness(120%) contrast(102%);
+}
+
+div.nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+
+}
+
+img.icon {
+    width: 20px;
+    margin: 10px 20px;
+}
+
+main {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+}
+
+.trending {
+    grid-column: 2 / 3;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

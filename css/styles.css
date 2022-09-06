@@ -19,6 +19,39 @@ header {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 60% 40%;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0px 3px 3px grey;
+}
+
+.searchbar > form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form > img {
+    width: 5%; 
+    margin-right: 10px;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+}
+
+.user-card > img {
+    width: 40px;
+    margin: 0px 10px;
+}
+
+.user-card > h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.greeting > img {
+    width: 15%;
 }
 
 nav {
@@ -47,7 +80,7 @@ div.nav > ul {
     padding: 0;
 }
 
-li > a{
+li > a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -55,8 +88,8 @@ li > a{
 
 }
 
-a > img {
-    width: 10%;
+img.icon {
+    width: 20px;
     margin: 10px 20px;
 }
 

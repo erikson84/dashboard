@@ -4,9 +4,10 @@ html {
 
 body {
     margin: 0;
+    height: 100vh;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -18,11 +19,12 @@ a {
 header {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 35%;
     align-items: center;
-    padding: 20px 30px 0px 30px;
+    padding: 20px 30px 5px 30px;
     box-shadow: 0px 2px 3px rgb(175 175 175);
     z-index: 999;
+    column-gap: 20px;
 }
 
 .searchbar > form {
@@ -89,12 +91,12 @@ input[type=search] {
 
 .head-buttons form {
     display: flex;
-    justify-content:  space-around;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .head-buttons form > button {
-    flex: 1;
+    flex: 1 1 auto;
     background-color: #0ea5e9;
     color: #f0f9ff;
     font-weight: bold;
@@ -146,10 +148,15 @@ img.icon {
 main {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 30px 30px;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 30px;
     background-color: rgba(226,232,240,255);
     gap: 20px;
+    overflow: auto;
+}
+
+h3.main-title {
+    margin: 0px 0px 20px 0px;
 }
 
 .projects {
@@ -167,7 +174,7 @@ main {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -178,7 +185,7 @@ main {
     border-left: orange 10px solid;
     padding: 20px 20px 0px 20px;
     border-radius: 10px;
-    height: max(150px, 10vh);
+    height: 200px;
     box-shadow: 2px 2px 3px lightgrey;
 }
 
@@ -202,8 +209,8 @@ main {
 }
 
 .card-buttons > img {
-    width: 25px;
-    margin: 0 10px;
+    width: 20px;
+    margin: 20px 10px;
 }
 
 .an-container {
@@ -228,4 +235,36 @@ main {
     font-size: normal;
     font-weight: bold;
     margin: 10px 0px;
+}
+
+.trend-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px lightgrey;
+}
+
+.user-card-trend {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0px;
+}
+
+.user-card-trend > img {
+    width: 40px;
+    margin: auto 10px;
+}
+
+.user-handle,
+.user-desc {
+    margin: 0;
+    font-size: small;
+}
+
+.user-desc {
+    color: grey;
 }

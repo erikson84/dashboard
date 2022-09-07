@@ -40,9 +40,10 @@ form > img {
 input[type=search] {
     flex: 1;
     background-color: #e2e8f0;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 0;
     height: 30px;
+    padding-left: 15px;
 }
 
 .user-card {
@@ -104,6 +105,10 @@ input[type=search] {
     border-radius: 15px;
     height: 30px;
 }
+.head-buttons form > button:hover {
+    background-color: steelblue;
+
+}
 
 nav {
     display: grid;
@@ -138,6 +143,11 @@ li > a {
     justify-content: flex-start;
     font-weight: bold;
 
+}
+
+ul > li:hover {
+    background-color: steelblue;
+    border-left: 4px rgb(32, 60, 82) solid;
 }
 
 img.icon {

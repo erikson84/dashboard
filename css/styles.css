@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     height: 100vh;
+    overflow: hidden;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -155,6 +156,10 @@ img.icon {
     margin: 10px 20px;
 }
 
+div.attrib {
+    text-align: center;
+}
+
 main {
     grid-column: 2 / 3;
     display: grid;
@@ -201,7 +206,7 @@ h3.main-title {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card-desc,

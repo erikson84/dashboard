@@ -197,6 +197,11 @@ h3.main-title {
     border-radius: 10px;
     height: 200px;
     box-shadow: 2px 2px 3px lightgrey;
+    transition: 0.5s all;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-desc,
